@@ -15,7 +15,7 @@ print("\n")
 
 #错误！ 
 #for循环在一开始就确定了遍历顺序，所以在for循环中使用remove，会改变原本的数组顺序
-class Solution:
+class Solution1:
     def removeElement(nums, val):
         i = 0
         for num in nums:
@@ -26,5 +26,5 @@ class Solution:
         return i
 nums = [3,2,2,3]
 val = 3
-print(Solution.removeElement(nums,val))
+print(Solution1.removeElement(nums,val))
 print(nums)

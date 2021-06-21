@@ -10,7 +10,7 @@ target = 7
 print(Solution.searchInsert(nums,target))
 
 #二叉树
-class Solution:
+class Solution1:
     def searchInsert(nums, target):
         left,right = 0,len(nums)
         mid = 0
@@ -25,4 +25,4 @@ class Solution:
         return left
 nums = [1,3,5,6]
 target = 7
-print(Solution.searchInsert(nums,target))
+print(Solution1.searchInsert(nums,target))

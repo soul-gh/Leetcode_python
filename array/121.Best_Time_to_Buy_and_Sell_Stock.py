@@ -11,7 +11,7 @@ prices = [1,7,5,3,6,4]
 print(Solution.maxProfit(prices))
 
 #超时
-class Solution:
+class Solution1:
     def maxProfit(prices):
         profit = 0
         for i in range(1,len(prices)):
@@ -24,7 +24,7 @@ class Solution:
                         profit = prices[j] - prices[buy]
         return profit
 prices = [1,7,5,3,6,4]
-print(Solution.maxProfit(prices))
+print(Solution1.maxProfit(prices))
 
 
 

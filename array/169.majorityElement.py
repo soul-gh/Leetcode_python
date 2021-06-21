@@ -15,7 +15,7 @@ nums = [1,1,1,1,1,5,5,5,5,5,5,5,5,5]
 print(Solution.majorityElement(nums))
 
 #摩尔投票
-class Solution:
+class Solution1:
     def majorityElement(nums):
         N = len(nums)
         cnt = 0
@@ -30,4 +30,4 @@ class Solution:
                 cnt = 0
         return target_num
 nums = [1,1,1,1,1,5,5,5,5,5,5,5,5,5]
-print(Solution.majorityElement(nums))
+print(Solution1.majorityElement(nums))

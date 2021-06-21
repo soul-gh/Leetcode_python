@@ -19,7 +19,7 @@ list2 = Solution.twoSum(nums,target)
 print(list2)
 
 #方法2 ： 使用in的暴力
-class Solution:
+class Solution1:
     def twoSum(nums, target):
         for i in range(len(nums)-1):
             base = nums[i]
@@ -28,10 +28,10 @@ class Solution:
                 return [i,nums.index(other,i+1)]
 nums = [2,7,11,15]
 target = 9
-print(Solution.twoSum(nums,target))
+print(Solution1.twoSum(nums,target))
 
 #方法3 ： 哈希表
-class Solution:
+class Solution2:
     def twoSum(nums, target):
         tmp = {}
         for k, v in enumerate(nums):        #枚举,key里放值，value里放索引
@@ -40,5 +40,5 @@ class Solution:
             tmp[v] = k
 nums = [2,7,11,15]
 target = 9
-print(Solution.twoSum(nums,target))
+print(Solution2.twoSum(nums,target))
 print(list(enumerate(nums)))

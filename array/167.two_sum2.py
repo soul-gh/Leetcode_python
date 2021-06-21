@@ -12,7 +12,8 @@ numbers = [2,3,5,6,7]
 target = 11
 print(Solution.twoSum(numbers,target))
 
-class Solution:
+#双指针
+class Solution1:
     def twoSum(numbers, target):
         N = len(numbers)
         left,right = 0,N-1
@@ -25,4 +26,4 @@ class Solution:
                 left += 1
 numbers = [2,3,5,6,7]
 target = 11
-print(Solution.twoSum(numbers,target))
+print(Solution1.twoSum(numbers,target))
