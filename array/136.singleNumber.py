@@ -13,7 +13,7 @@ class Solution:
 nums = [2,2,1]
 print(Solution.singleNumber(nums))
 
-#位异或
+#异或
 class Solution1:
     def singleNumber(nums):
         tmp = nums[0]
