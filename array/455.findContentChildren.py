@@ -1,3 +1,5 @@
+#小孩吃饼干
+#双指针
 class Solution:
     def findContentChildren(g, s):
         cnt = 0
