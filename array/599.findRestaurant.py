@@ -1,3 +1,4 @@
+#两个列表的最小索引总和（相同元素）
 #哈希表
 class Solution:
     def findRestaurant(list1, list2):
