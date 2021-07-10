@@ -10,3 +10,14 @@ class Solution:
                 return nums[i]
 nums = [2, 3, 1, 0, 2, 5, 3]
 print(Solution.findRepeatNumber(nums))
+
+#鸽巢原理，原地hash
+class Solution:
+    def findRepeatNumber(nums):
+        n = len(nums)
+        for i in range(n):
+            while i != nums[i]:
+                if nums[i] == nums[nums[i]]:
+                    return nums[i]
+                nums[nums[i]] = nums[i]
+                nums[i] = nums[nums[i]] 
