@@ -31,3 +31,18 @@ class Solution:
             return Solution.myPow(x*x,n//2) 
 print(Solution.myPow(2.0,10))
 
+#快速幂
+class Solution:
+    def myPow(x: float, n: int) -> float:
+        if x == 0:
+            return 0
+        if n < 0:
+            n = -n
+            x = 1/x
+        res = 1.0
+        while n:
+            if n & 1:
+                res *= x
+            x *= x
+            n >>= 1
+        return res 
