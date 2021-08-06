@@ -9,7 +9,7 @@ class TreeNode:
         self.right = None
 
 class Solution:
-    def levelOrder(root: TreeNode):
+    def levelOrder( root: TreeNode):
         if not root:
             return []
         que,res = [root],[]
